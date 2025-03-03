@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Time Management</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Employee Time Management System</h1>
+
+    <!-- Employee Info -->
+    <div id="employeeDetails">
+      <input type="text" id="employeeId" placeholder="Enter Employee ID" />
+      <input type="text" id="employeeName" placeholder="Enter Employee Name" />
+    </div>
+
+    <!-- Time Logs Section -->
+    <div id="timeLogsSection" style="display:none;">
+      <button id="loginBtn">Login</button>
+      <button id="logoutBtn" style="display:none;">Logout</button>
+      <button id="breakInBtn" style="display:none;">Break In</button>
+      <button id="breakOutBtn" style="display:none;">Break Out</button>
+
+      <div id="timeDetails" style="display:none;">
+        <p>Login Time: <span id="loginTime"></span></p>
+        <p>Break In: <span id="breakInTime"></span></p>
+        <p>Break Out: <span id="breakOutTime"></span></p>
+        <p>Logout Time: <span id="logoutTime"></span></p>
+        <p>Total Time: <span id="totalTime"></span></p>
+      </div>
+    </div>
+
+    <button id="viewReportBtn">View Time Logs</button>
+
+    <div id="reportSection" style="display:none;">
+      <h3>Employee Time Logs</h3>
+      <div id="reportTable"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
